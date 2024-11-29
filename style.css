@@ -1,0 +1,77 @@
+/* Universal selector to reset margin, padding, and set font and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Center the calculator */
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #012731; /* Background color for the page */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Styling for the calculator */
+.calculator {
+    background: #100b0b; /* Calculator background color */
+    padding: 20px; /* Padding inside the calculator */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styling for operator buttons */
+.operators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for all input buttons in the calculator */
+.calculator form input {
+    border: 0.5px solid #3498db; /* Border around buttons */
+    outline: 0; /* Remove focus outline */
+    width: 60px; /* Fixed width */
+    height: 60px; /* Fixed height */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.2); /* Button shadow */
+    background: transparent; /* Transparent background */
+    font-size: 20px; /* Font size */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px; /* Space around buttons */
+}
+
+/* Display alignment */
+form #displayy {
+    display: flex;
+    justify-content: flex-end; /* Align text to the right */
+    margin: 20px 0; /* Space around the display */
+}
+
+/* Styling for the display input */
+form #displayy input {
+    text-align: right; /* Align text inside the display */
+    flex: 1; /* Take up remaining space */
+    font-size: 45px; /* Larger font size */
+    box-shadow: none; /* Remove shadow */
+}
+
+/* Styling for the equal button */
+#equal {
+    width: 145px; /* Make it wider */
+}
+
+/* Operator button color */
+form .operator input[type="button"] {
+    color: #5b881f; /* Default color */
+}
+
+/* Operator button hover effect */
+form input.operator:hover {
+    color: #d71d1d; /* Hover color */
+}
